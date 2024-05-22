@@ -1,15 +1,29 @@
 # Advanced-Programming-2024
 
+# EcoWardrobe: A Clothing Library Platform
+
+**Author:** Adrien Currat  
+**Institution:** University of Lausanne, Msc. in Economics  
+**Email:** adrien.currat@unil.ch
+
 ## Introduction
-EcoWardrobe is a Graphical User Interface (GUI) application created with Python’s Tkinter, designed to enable users to borrow and return clothing items from a digital clothing library. The library offers a wide selection of garments for both men and women, available in various sizes and price ranges. By offering an alternative to fast fashion, EcoWardrobe supports a circular economy and aims to reduce textile waste. The intuitive interface allows users to rent items, enjoy them for as long as needed, and return them. The inventory status is updated in real-time whenever an item is rented or returned. This project highlights the significance of sustainability in the fashion industry, promoting responsible consumption and the reuse of garments.
+EcoWardrobe is a Graphical User Interface (GUI) application developed using Python’s Tkinter. It allows users to borrow and return clothing items from a digital clothing library. The library includes a variety of garments for both men and women in different sizes and price ranges. By providing a rental system for clothing, EcoWardrobe supports a circular economy and aims to reduce textile waste.
+
+## Libraries to Download
+To run EcoWardrobe, you need to install the following Python libraries:
+
+- **Tkinter:** For creating the graphical user interface.
+- **ttkbootstrap:** For enhancing the appearance of Tkinter widgets.
+- **Pillow:** For handling and manipulating images.
+- **os:** For interacting with the operating system.
+- **random:** For generating random values.
+- **sqlite3:** For managing the SQLite database.
+- **matplotlib:** For generating graphs and charts.
+
+## Content of the folder
+Clothing_Library.py : This is the main Python script used to run the EcoWardrobe application. It contains all the necessary code to start the GUI, manage rentals and returns, and interact with the SQLite database.
+
+Images Folder: This folder contains all the images used in the application. Ensure you update the file paths for the images in the application to match the paths on your local system
 
 
-## Features
-- **Home Page:** The main window of the platform, acting as the central hub for navigation.
-- **Eco-Comparator:** Compares the environmental impact of renting versus buying clothing items.
-- **Rental:** Manages the process of renting items.
-- **Return:** Manages the process of returning items.
-- **Statistics:** Displays various statistics to the users about the clothing library.
 
-## Installation
-To run this project locally, follow these steps:
