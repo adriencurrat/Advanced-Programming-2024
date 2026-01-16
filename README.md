@@ -4,7 +4,7 @@
 
 **Author:** Adrien Currat  
 **Institution:** University of Lausanne, Msc. in Economics  
-**Email:** adrien.currat@unil.ch
+**Email:** adrien.currat@gmail.com
 
 ## Introduction
 EcoWardrobe is a Graphical User Interface (GUI) application developed using Python’s Tkinter. It allows users to borrow and return clothing items from a digital clothing library. The library includes a variety of garments for both men and women in different sizes and price ranges. By providing a rental system for clothing, EcoWardrobe supports a circular economy and aims to reduce textile waste.
