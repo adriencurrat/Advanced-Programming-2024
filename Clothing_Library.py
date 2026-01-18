@@ -12,7 +12,10 @@ import random
 import sqlite3
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+IMAGES_DIR = BASE_DIR / "Images"
 
 
 # Global lists
@@ -356,7 +359,7 @@ class RentalWindow(tk.Toplevel):
         detail.geometry("600x700")
 
         # Load and display the clothing image
-        image_path = os.path.expanduser(f"~/Desktop/Images/{item[2]}_{item[1]}.png")
+        image_path = IMAGES_DIR / f"{item[2]}_{item[1]}.png"
         original_image = Image.open(image_path)
         resized_image = original_image.resize((300, 300), Image.Resampling.LANCZOS)  # Resize to fit the frame size
         display_image = ImageTk.PhotoImage(resized_image)
@@ -796,7 +799,7 @@ class HomePage(ttkboot.Window):
         self.top_frame.pack(side='top', fill='x', pady=10)
 
         # Load and display the logo
-        logo_path = os.path.expanduser("~/Desktop/Images/Logo.png")
+        logo_path = IMAGES_DIR / "Logo.png"
         logo_image = Image.open(logo_path)
         logo_photo = ImageTk.PhotoImage(logo_image.resize((150, 150), Image.Resampling.LANCZOS))
         self.logo_label = ttkboot.Label(self.top_frame, image=logo_photo)
@@ -823,7 +826,7 @@ class HomePage(ttkboot.Window):
         self.image_frame.pack_propagate(False)  
 
         # Load and display the clothing image
-        self.image_path = os.path.expanduser("~/Desktop/Images/Clothing.png")
+        self.image_path = IMAGES_DIR / "Clothing.png"
         self.original_image = Image.open(self.image_path)
         self.resized_image = self.original_image.resize((300, 300), Image.Resampling.LANCZOS)  # Resize to fit the frame size
         self.display_image = ImageTk.PhotoImage(self.resized_image)
