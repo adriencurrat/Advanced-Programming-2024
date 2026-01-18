@@ -18,7 +18,7 @@ This project combines basic Python programming concepts with advanced techniques
 ## Content of the folder
 Clothing_Library.py : This is the main Python script used to run the EcoWardrobe application. It contains all the necessary code to start the GUI, manage rentals and returns, and interact with the SQLite database.
 
-Images Folder: This folder contains all the images used in the application. Ensure you update the file paths for the images in the application to match the paths on your local system
+Images Folder: This folder contains all the images used in the application.
 
 
 
