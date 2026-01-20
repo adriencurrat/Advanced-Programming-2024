@@ -1,5 +1,6 @@
 # EcoWardrobe: A Clothing Library Platform
 
+**Author:** Adrien Currat
 **Institution:** University of Lausanne, Msc. in Economics  
 **Course:** Advanced Programming
 
